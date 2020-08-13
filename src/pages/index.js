@@ -9,6 +9,7 @@ export default function Home() {
       <Layout>
         <h1>Hello Gatsby! I'm Sky.</h1>
         <p>What a beautiful world.</p>
+        <p>Echo echo echo.</p>
 
         <img src="https://source.unsplash.com/random/400x200" alt="" />
         <p>
