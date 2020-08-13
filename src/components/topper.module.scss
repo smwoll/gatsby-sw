@@ -1,0 +1,65 @@
+@import "bourbon";
+@import "../styles/colors";
+
+.tiptop {
+    font-family: $font-stack-helvetica;
+        /* width: 100%; */
+    display: flex;
+    /* vertical-align: middle; */
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    padding: 1rem;
+        
+}
+
+.nav-list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        .nav-item, a {
+            font-size: 1.2rem;
+            margin-right: 1.3rem;
+            text-decoration: none;
+        }
+    }
+
+.active {
+    color: green;
+    font-weight: 500;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+.logo-text {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: #d4d4d4;
+
+}
+
+.sw {
+    top: 50%;
+    /* width: 200px; */
+    position: absolute;
+    /* height: 200px; */
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+
+}
+
+
