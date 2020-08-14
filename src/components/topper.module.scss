@@ -1,15 +1,12 @@
 @import "bourbon";
 @import "../styles/colors";
+@import "../styles/mixins";
 
 .tiptop {
-    font-family: $font-stack-helvetica;
-        /* width: 100%; */
-    display: flex;
-    /* vertical-align: middle; */
-    flex-direction: column;
-    position: fixed;
-    justify-content: center;
-    padding: 1rem;
+    @include easeinout;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
         
 }
 
@@ -45,11 +42,13 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    background: #d4d4d4;
+    background: $lightcloud;
+    @include easeinout;
 
 }
 
 .sw {
+    color: $nightsky;
     top: 50%;
     /* width: 200px; */
     position: absolute;
@@ -59,6 +58,7 @@
     text-align: center;
     font-weight: bold;
     font-size: .8rem;
+    @include easeinout;
 
 }
 

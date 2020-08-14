@@ -1,0 +1,41 @@
+// front page styling
+
+@import "bourbon";
+@import "colors";
+@import "mixins";
+
+.cover {
+    min-height:  90vh;
+    background: $nightsky;
+}
+
+.stage {
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+    width: 100%;
+    background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 1px),radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px),radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 3px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    background-attachment: fixed;
+}
+
+.cover-title {
+    color: white;
+    h1 {
+        font-size: 10vw;
+    }
+}
+
+.lead-text {
+    font-size: calc(10vw * .48666666);
+    color: #a0b6ff;
+}
+
+// clouds 
+
+.clouds__1 {
+    position: fixed;
+    right: -5vw;
+    width: 20vw;
+}

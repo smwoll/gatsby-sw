@@ -2,6 +2,7 @@
 
 @import "bourbon";
 @import "colors";
+@import "mixins";
 
 html {
   font-family: sans-serif;
@@ -223,7 +224,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 h1 {
   margin-left: 0;
@@ -633,4 +634,31 @@ pre tt:after {
 .container-fluid {
     margin: 0;
     max-width: 100%;
+}
+
+// slanted edges
+
+// slanted edges here
+.edge--bottom {
+  @include angle(after);
+}
+
+.edge--bottom--reverse {
+  @include angle(after, true);
+}
+
+.edge--top {
+  @include angle(before);
+}
+
+.edge--top--reverse {
+  @include angle(before, true);
+}
+
+.edge--both {
+  @include angle(both);
+}
+
+.edge--both--reverse {
+  @include angle(both, true);
 }

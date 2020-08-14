@@ -14,11 +14,7 @@ const Topper = () => {
             <div className={topperStyles.logoText}>
               <span className={topperStyles.sw}>skyland.dev</span>
             </div>
-            <img
-              src={logo}
-              alt="Logo background image showing lightning striking distant mountains"
-              className="img-fluid"
-            />
+            
           </div>
         </Link>
         <nav>
