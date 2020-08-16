@@ -8,8 +8,18 @@
     min-height:  90vh;
     background: $nightsky;
 }
+.stage0 {
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+    width: 100%;
+    background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 1px),radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px),radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 3px);
+    background-size: 450px 450px, 300px 300px, 220px 220px, 120px 120px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    background-attachment: fixed;
+}
 
-.stage {
+.stage1 {
     display: grid;
     place-items: center;
     min-height: 80vh;
