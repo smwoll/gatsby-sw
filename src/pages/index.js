@@ -17,15 +17,20 @@ export default function Home() {
     <div className="front" id="top">
       <Parallax pages={3}>
         <Topper />
-        <ParallaxLayer offset={0} speed={0.4}>
+        <ParallaxLayer offset={0} speed={0}>
           <div className="cover edge--bottom--reverse">
             <div className="stage0"></div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.5}>
+        <ParallaxLayer offset={0} speed={0.2}>
           <div className="stage1"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={1}>
+        <ParallaxLayer offset={0.2} speed={.3}>
+          <div className="clouds__2">
+            <img src={cloud} alt="cloud" />
+          </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={-0.2}>
           <div className="text-stage">
             <div className="cover-title">
               <h1>Skyland Woll</h1>
@@ -38,13 +43,13 @@ export default function Home() {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={.7} speed={1.5}>
+        <ParallaxLayer offset={0.7} speed={2}>
           <div className="clouds__1">
             <img src={cloud} alt="cloud" />
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.6}>
+        <ParallaxLayer offset={1} speed={0.8}>
           <div className="container">
             <p>Echo echo echo.</p>
 
@@ -71,6 +76,26 @@ export default function Home() {
           speed={1}
           style={{ backgroundColor: "#805E73" }}
         />
+        <ParallaxLayer offset={2} speed={0.8}>
+          <div className="container">
+            <p>Echo echo echo.</p>
+            <p>
+              <Link to="/about">Learn a lil more.</Link>
+            </p>
+            <p>
+              <a
+                href="https://html5zombo.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Go far away.
+              </a>
+            </p>
+            <p>
+              Need a guy? <Link to="/contact">Say howdy!</Link>
+            </p>
+          </div>
+        </ParallaxLayer>
       </Parallax>
     </div>
   )
