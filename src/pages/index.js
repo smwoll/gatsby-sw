@@ -23,7 +23,10 @@ export default function Home() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.5}>
-          <div className="stage1">
+          <div className="stage1"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={1}>
+          <div className="text-stage">
             <div className="cover-title">
               <h1>Skyland Woll</h1>
               <p className="lead-text">Let's use the web for good.</p>
@@ -32,14 +35,16 @@ export default function Home() {
                   Contact me
                 </Link>
               </p>
-              <div className="clouds__1">
-                <img src={cloud} alt="cloud" />
-              </div>
             </div>
           </div>
         </ParallaxLayer>
+        <ParallaxLayer offset={.7} speed={1.5}>
+          <div className="clouds__1">
+            <img src={cloud} alt="cloud" />
+          </div>
+        </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.5}>
+        <ParallaxLayer offset={1} speed={0.6}>
           <div className="container">
             <p>Echo echo echo.</p>
 
@@ -62,7 +67,7 @@ export default function Home() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          offset={1}
+          offset={2}
           speed={1}
           style={{ backgroundColor: "#805E73" }}
         />

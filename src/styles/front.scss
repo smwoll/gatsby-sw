@@ -17,6 +17,7 @@
     background-size: 450px 450px, 300px 300px, 220px 220px, 120px 120px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
+    opacity: .8;
 }
 
 .stage1 {
@@ -28,6 +29,13 @@
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
+}
+
+.text-stage {
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+    width: 100%;
 }
 
 .cover-title {
@@ -47,5 +55,5 @@
 .clouds__1 {
     position: fixed;
     right: -5vw;
-    width: 20vw;
+    width: 30vw;
 }
