@@ -4,16 +4,35 @@
 
 .tiptop {
     @include easeinout;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
     z-index: 999;
     position: absolute;
     width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    nav {
+        margin-left: auto;
+        display: grid;
+        place-items: center;
+        width: 50vw;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            width: 100%;
+        }
+        li {
+            display: grid;
+            place-items: end;
+        }
+    }
+    
         
 }
 
 .nav-list {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
         margin: 0;
         .nav-item, a {
             font-size: 1.2rem;
@@ -23,43 +42,63 @@
     }
 
 .active {
-    color: green;
-    font-weight: 500;
+    color: black;
+    font-weight: bold;
+}
+.front .active {
+    color: white;
+}
+
+.logo-link {
+    text-decoration: none;
 }
 
 .logo {
+    background-color: $nightsky;
     position: relative;
-    display: inline-block;
+    display: grid;
+    place-items: center;
     width: 100px;
-    height: 100px;
+    height: 50px;
     margin-bottom: 2rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    &:after {
+        content: "\2190 Home";
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: $lightcloud;
+    }
+    &:hover {
+        .logo-text {
+            height: 0px;
+        }
+        .sw {
+            opacity: 0;
+        }
+    }
 }
 .logo-text {
+    display: grid;
+    place-items: center;
     position: absolute;
     top: 0;
     width: 100px;
-    height: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 50px;
     text-align: center;
     background: $lightcloud;
-    @include easeinout;
-
+    -webkit-transition: all 0.2s ease-in-out 0s!important;
+    transition: all 0.2s ease-in-out 0s!important;
 }
 
 .sw {
     color: $nightsky;
-    top: 50%;
-    /* width: 200px; */
-    position: absolute;
-    /* height: 200px; */
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
     text-align: center;
     font-weight: bold;
     font-size: .8rem;
-    @include easeinout;
-
+    -webkit-transition: all 0.2s ease-in-out 0s!important;
+    transition: all 0.2s ease-in-out 0s!important;
 }
 
 
