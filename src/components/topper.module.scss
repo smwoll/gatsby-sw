@@ -15,17 +15,19 @@
     nav {
         margin-left: auto;
         display: grid;
-        place-items: center;
-        width: 50vw;
+        place-items: center end;
+        width: 40vw;
 
         ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
             width: 100%;
         }
         li {
-            display: grid;
-            place-items: end;
+            flex: 0 1 50px; /*  No stretching: */
+            margin: 5px;
+            text-align: right;
         }
     }
     
@@ -34,10 +36,12 @@
 
 .nav-list {
         margin: 0;
+        list-style: none;
         .nav-item, a {
             font-size: 1.2rem;
             margin-right: 1.3rem;
             text-decoration: none;
+            color: white;
         }
     }
 

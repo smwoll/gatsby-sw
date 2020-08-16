@@ -9,7 +9,8 @@ import logo from "../assets/sw-logo-800.jpg"
 const Topper = () => {
     return (
       <header className={topperStyles.tiptop}>
-        <Link className={topperStyles.logoLink} to="/">
+        <div className="container flex">
+          <Link className={topperStyles.logoLink} to="/">
           <div className={topperStyles.logo}>
             <div className={topperStyles.logoText}>
               <span className={topperStyles.sw}>skyland.dev</span>
@@ -57,6 +58,8 @@ const Topper = () => {
             </li>
           </ul>
         </nav>
+        </div>
+        
       </header>
     )
 }
