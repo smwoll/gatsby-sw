@@ -22,10 +22,10 @@ export default function Home() {
             <div className="stage0"></div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.2}>
+        <ParallaxLayer offset={0} speed={0}>
           <div className="stage1"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.2} speed={.3}>
+        <ParallaxLayer offset={0.15} speed={.3}>
           <div className="clouds__2">
             <img src={cloud} alt="cloud" />
           </div>

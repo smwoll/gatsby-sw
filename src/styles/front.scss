@@ -17,7 +17,7 @@
     background-size: 450px 450px, 300px 300px, 220px 220px, 120px 120px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
-    opacity: .8;
+    opacity: .5;
 }
 
 .stage1 {
@@ -29,6 +29,7 @@
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
+    opacity: .6;
 }
 
 .text-stage {
@@ -60,6 +61,7 @@
 .clouds__2 {
     position: fixed;
     left: -12vw;
-    width: 50vw;
-    opacity: .3;
+    width: 55vw;
+    filter: brightness(.3);
+    opacity: .9;
 }
