@@ -26,13 +26,16 @@ export default function Home() {
           <div className="stage1"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.15} speed={0.3}>
-          <div className="clouds__2">
+          <div
+            className="clouds__2">
             <img src={cloud} alt="cloud" />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={-0.2}>
+        <ParallaxLayer offset={0} speed={-0.4}>
           <div className="text-stage">
-            <div className="cover-title">
+            <div
+              className="cover-title"
+            >
               <h1>Skyland Woll</h1>
               <p className="lead-text">Let's use the web for good.</p>
               <p>
@@ -50,7 +53,12 @@ export default function Home() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.8} id="section-1">
-          <div className="container">
+          <div
+            className="container"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+          >
             <p>Echo echo echo.</p>
 
             <img src="https://source.unsplash.com/random/400x200" alt="" />
@@ -95,6 +103,7 @@ export default function Home() {
               Need a guy? <Link to="/contact">Say howdy!</Link>
             </p>
           </div>
+          <Footer />
         </ParallaxLayer>
       </Parallax>
     </div>

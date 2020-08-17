@@ -40,6 +40,8 @@
 }
 
 .cover-title {
+    @include slide-in-left;
+    animation-delay: .2s;
     color: white;
     h1 {
         font-size: 10vw;
@@ -54,11 +56,15 @@
 // clouds 
 
 .clouds__1 {
+    @include slide-in-right;
+    animation-delay: .01s;
     position: fixed;
     right: -5vw;
     width: 30vw;
 }
 .clouds__2 {
+    @include slide-in-left;
+    animation-delay: .02s;
     position: fixed;
     left: -12vw;
     width: 55vw;

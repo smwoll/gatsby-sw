@@ -14,9 +14,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bourbon": "^7.0.0",
     "gatsby": "^2.24.26",
     "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-scroll-reveal": "0.0.7",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
