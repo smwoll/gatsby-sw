@@ -26,22 +26,25 @@ export default function Home() {
           <div className="stage1"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.15} speed={0.3}>
-          <div
-            className="clouds__2">
+          <div className="clouds__2">
             <img src={cloud} alt="cloud" />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={-0.4}>
           <div className="text-stage">
-            <div
-              className="cover-title"
-            >
+            <div className="cover-title">
               <h1>Skyland Woll</h1>
               <p className="lead-text">Let's use the web for good.</p>
-              <p>
-                <Link className="cta" to="/contact">
-                  Contact me
-                </Link>
+              <p className="text-center">
+                I'm a front end web developer ready to design and build your
+                next world-changing website.
+              </p>
+              <p className="text-center">
+                <div className="cta-box">
+                  <Link className="cta btn" to="/contact">
+                    Contact me
+                  </Link>
+                </div>
               </p>
             </div>
           </div>

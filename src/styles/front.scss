@@ -71,3 +71,55 @@
     filter: brightness(.3);
     opacity: .9;
 }
+
+.cta-box {
+    @include bounce;
+}
+.cta-box:hover {
+    -webkit-animation: none;
+	        animation: none;
+}
+
+.cta {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    margin: 2rem 0;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    @include easeinout;
+}
+.cta:hover {
+    @include easeinout;
+            
+}
+
+.btn {
+    @include easeinout;
+    font-weight: bold;
+    box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.14);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: $lightcloud;
+    border-color: $lightcloud;
+    text-decoration: none;
+}
+.btn:hover {
+    @include easeinout;
+    background-color: $darkcloud;
+    border-color: $darkcloud;
+    box-shadow: 0 2px 4px 0 rgba(25, 26, 27, 0.4);
+    transform: scale(.98);
+}
