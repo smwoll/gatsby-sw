@@ -25,7 +25,7 @@ export default function Home() {
         <ParallaxLayer offset={0} speed={0}>
           <div className="stage1"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.15} speed={.3}>
+        <ParallaxLayer offset={0.15} speed={0.3}>
           <div className="clouds__2">
             <img src={cloud} alt="cloud" />
           </div>
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.8}>
+        <ParallaxLayer offset={1} speed={0.8} id="section-1">
           <div className="container">
             <p>Echo echo echo.</p>
 
