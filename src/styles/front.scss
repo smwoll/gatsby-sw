@@ -19,7 +19,7 @@
     background-size: 450px 450px, 300px 300px, 220px 220px, 120px 120px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
-    opacity: .5;
+    opacity: .3;
 }
 
 .stage1 {
@@ -31,7 +31,7 @@
     background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
     background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
     background-attachment: fixed;
-    opacity: .6;
+    opacity: .4;
 }
 
 .text-stage {
@@ -44,10 +44,16 @@
         font-size: 1.5rem;
         margin-bottom: 2rem;
     }
+    .lead-text {
+    font-size: calc(10vw * .49996666);
+    color: #a0b6ff;
+    }
+    .intro {
+    max-width: 60vw;
+    }
 }
 
 .cover-title {
-    @include slide-in-left;
     animation-delay: .2s;
     color: white;
     h1 {
@@ -55,10 +61,6 @@
     }
 }
 
-.lead-text {
-    font-size: calc(10vw * .48666666)!important;
-    color: #a0b6ff;
-}
 
 // clouds 
 
