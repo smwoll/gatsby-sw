@@ -11,7 +11,7 @@ import logo from "../assets/sw-logo-800.jpg"
 const Topper = () => {
     return (
       <header className={topperStyles.tiptop}>
-        <div className="container flex">
+        <div className="container-fluid flex">
           <Link className={topperStyles.logoLink} to="/">
           <div className={topperStyles.logo}>
             <div className={topperStyles.logoText}>

@@ -12,7 +12,6 @@
     z-index: 1002;
 border: 0;
 background: transparent;
-color: red;
 cursor: pointer;
 position: relative;
 top: 0;
@@ -22,7 +21,7 @@ height: 100px;
   }
   nav {
   color: white;
-height: 100vh;
+min-height: 100vh;
 width: 100%;
 display: grid;
 place-items: center;
@@ -31,8 +30,9 @@ ul {
 }
 li {
   list-style: none;
+  line-height: 1;
   padding: 1rem;
-  font-size: calc(4vw + 2rem);
+  font-size: calc(3.5vw + 2rem);
   transition: transform .2s ease-in-out, color .3s ease;
   a {
     color: white;
@@ -42,9 +42,8 @@ li {
 }
 li:hover {
   transform: scale(1.05);
-  color: $darkcloud;
   a {
-    color: $darkcloud;
+    color: $nightsky;
   }
 
 }
