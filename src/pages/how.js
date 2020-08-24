@@ -11,6 +11,15 @@ const HowPage = () => {
         <blockquote>
           "If I have seen further, it is by standing upon the shoulders of
           giants."
+          <footer>
+            <a
+              href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              —Isaac Newton
+            </a>
+          </footer>
         </blockquote>
         <p>
           Here I will attempt to say thank you to all those developers who were
@@ -72,7 +81,7 @@ const HowPage = () => {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  The great Gatsby Bootcamp
+                  The Great Gatsby Bootcamp
                 </a>
               </li>
               <li>

@@ -449,6 +449,11 @@ blockquote {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-size: 1.4rem;
+  footer {
+    font-size: 1rem;
+
+  }
 }
 form {
   margin-left: 0;
@@ -629,6 +634,7 @@ pre tt:after {
 }
 
 .container {
+    @include padding(null 1rem);
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
@@ -688,7 +694,7 @@ pre tt:after {
 
 // layout 
 .layout {
-  padding: 100px 0;
+  @include padding(100px null);
   h1 {
     font-size: 4rem;
   }
@@ -710,10 +716,32 @@ body {
   }
 }
 
+.btn {
+    @include easeinout;
+    font-weight: bold;
+    box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.14);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: $lightcloud;
+    border-color: $lightcloud;
+    text-decoration: none;
+}
+.btn:hover {
+    @include easeinout;
+    background-color: $darkcloud;
+    border-color: $darkcloud;
+    box-shadow: 0 2px 4px 0 rgba(25, 26, 27, 0.4);
+    color: #fff;
+    transform: scale(.98);
+}
+
 // footer 
-footer {
+footer.site-footer {
   min-height: 80vh;
-  width: 100%;
+  width: 100vw;
   background-image: url("../assets/footer-blob.svg");
   background-size: cover;
   background-position: left top;

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Footer = () => {
     return (
-      <footer>
+      <footer className="site-footer">
         <div className="footer-pad"></div>
         <div className="footer-content">
           <div className="container">
