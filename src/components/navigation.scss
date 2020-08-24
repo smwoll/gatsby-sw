@@ -33,8 +33,19 @@ li {
   list-style: none;
   padding: 1rem;
   font-size: calc(4vw + 2rem);
+  transition: transform .2s ease-in-out, color .3s ease;
+  a {
+    color: white;
+    text-decoration: none;
+    transition: transform .2s ease-in-out, color .3s ease;
+  }
 }
 li:hover {
+  transform: scale(1.05);
+  color: $darkcloud;
+  a {
+    color: $darkcloud;
+  }
 
 }
 }
@@ -86,6 +97,7 @@ li:hover {
   opacity: 0;
 
   transition: all 0.55s;
+  transition-delay: .1s;
 
   cursor: pointer;
 

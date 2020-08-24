@@ -29,8 +29,9 @@ class Navigation extends React.Component {
                         tabIndex="0">
                         <nav>
                             <ul>
-                                <li>Home</li>
-                                <li>Contact</li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/how">How I made this</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </nav>
 
