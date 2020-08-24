@@ -12,38 +12,10 @@
     width: 100%;
     overflow: hidden;
     text-decoration: none;
-    nav {
-        margin-left: auto;
-        display: grid;
-        place-items: center end;
-        width: 40vw;
-
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            width: 100%;
-        }
-        li {
-            flex: 0 1 50px; /*  No stretching: */
-            margin: 5px;
-            text-align: right;
-        }
-    }
     
         
 }
 
-.nav-list {
-        margin: 0;
-        list-style: none;
-        .nav-item, a {
-            font-size: 1.2rem;
-            margin-right: 1.3rem;
-            text-decoration: none;
-            color: white;
-        }
-    }
 
 .active {
     color: black;

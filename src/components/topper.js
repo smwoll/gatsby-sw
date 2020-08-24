@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 
 import topperStyles from './topper.module.scss'
 
+import Navigation from '../components/navigation'
+
 import logo from "../assets/sw-logo-800.jpg"
 
 const Topper = () => {
@@ -18,46 +20,7 @@ const Topper = () => {
             
           </div>
         </Link>
-        <nav>
-          <ul className={topperStyles.navList}>
-            <li>
-              <Link
-                className="nav-item"
-                activeClassName={topperStyles.active}
-                to="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="nav-item"
-                activeClassName={topperStyles.active}
-                to="/about"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="nav-item"
-                activeClassName={topperStyles.active}
-                to="/blog"
-              >
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="nav-item"
-                activeClassName={topperStyles.active}
-                to="/contact"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <Navigation />
         </div>
         
       </header>

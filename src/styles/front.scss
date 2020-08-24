@@ -92,6 +92,7 @@
 
 .cta-box {
     @include bounce;
+    animation-delay: 1.5s;
 }
 .cta-box:hover {
     -webkit-animation: none;
