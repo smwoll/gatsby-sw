@@ -686,6 +686,30 @@ pre tt:after {
   display: inline-flex;
 }
 
+// layout 
+.layout {
+  padding: 100px 0;
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+body {
+  ul {
+    list-style-type: none;
+    margin: 1rem 0;
+  }
+  a {
+    @include easeinout;
+    font-weight: bold;
+    color: $darkcloud;
+    text-decoration: none;
+    &:hover {
+      color: $lightcloud;
+    }
+  }
+}
+
 // footer 
 footer {
   min-height: 80vh;

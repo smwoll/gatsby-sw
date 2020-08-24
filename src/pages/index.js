@@ -198,7 +198,7 @@ export default function Home() {
             <div className="container">
               <p>Echo echo echo.</p>
 
-              <img src="https://source.unsplash.com/random/400x200" alt="" />
+              
               <p>
                 <Link to="/about">Learn a lil more.</Link>
               </p>
