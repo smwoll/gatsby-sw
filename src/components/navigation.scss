@@ -59,11 +59,13 @@ li:hover {
   height: 100%;
   z-index: -1;
   transition: all 0.35s;
+  opacity: .9;
   pointer-events: none;
 }
 #nav-wrapper:hover {
   .menu-blob {
   transform: scale(1.3);
+  opacity: 1;
 }
 
 }

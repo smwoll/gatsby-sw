@@ -217,12 +217,8 @@ export default function Home() {
             </div>
           </section>
         </ParallaxLayer>
-        <ParallaxLayer
-          offset={2}
-          speed={1}
-          style={{ backgroundColor: "#805E73" }}
-        />
-        <ParallaxLayer offset={2} speed={0.8}>
+        
+        <ParallaxLayer offset={2} speed={0}>
           <div className="container">
             <p>Echo echo echo.</p>
             <p>
