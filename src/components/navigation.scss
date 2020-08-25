@@ -42,7 +42,7 @@ li {
   }
 }
 li:hover {
-  transform: scale(1.02);
+  transform: scale(1.02) translateX(.4rem);
   a {
     color: $nightsky;
   }

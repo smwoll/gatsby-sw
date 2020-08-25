@@ -7,8 +7,14 @@ const HowPage = () => {
     return (
       <Layout>
         <SEO title="How I Made This · Skyland Woll" />
-        <h1>How I made this website</h1>
-        <blockquote>
+        <h1 data-sal="slide-down" data-sal-delay="0" data-sal-easing="ease">
+          How I made this website
+        </h1>
+        <blockquote
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+        >
           "If I have seen further, it is by standing upon the shoulders of
           giants."
           <footer>
@@ -21,14 +27,14 @@ const HowPage = () => {
             </a>
           </footer>
         </blockquote>
-        <p>
+        <p data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease">
           Here I will attempt to say thank you to all those developers who were
           generous enough with their time and upon whose shoulders I stand. I
           will list the resources, blogs, and videos that helped inspire me as I
           worked to create my portfolio website. This list is a work in
           progress, and I will continue to update it.
         </p>
-        <ul>
+        <ul data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
           <li>
             <a
               href="https://1linelayouts.glitch.me/"

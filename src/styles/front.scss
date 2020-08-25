@@ -4,6 +4,10 @@
 @import "colors";
 @import "mixins";
 
+.front-html {
+    overflow: hidden;
+}
+
 .cover {
     min-height:  100vh;
     background: $nightsky;

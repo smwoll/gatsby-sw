@@ -13,11 +13,15 @@ import '../styles/front.scss'
 
 import cloud from '../assets/cloud1.svg'
 import cloudbreak from '../assets/pagebreak-curve.svg'
+import { Helmet } from "react-helmet"
 
 export default function Home() {
   return (
     <div className="front" id="top">
       <SEO title="Home · Skyland Woll" />
+      <Helmet>
+        <html class="front-html" />
+      </Helmet>
       <Parallax pages={3}>
         <Topper />
         <ParallaxLayer offset={0} speed={0}>
@@ -198,7 +202,6 @@ export default function Home() {
             <div className="container">
               <p>Echo echo echo.</p>
 
-              
               <p>
                 <Link to="/about">Learn a lil more.</Link>
               </p>
@@ -217,7 +220,7 @@ export default function Home() {
             </div>
           </section>
         </ParallaxLayer>
-        
+
         <ParallaxLayer offset={2} speed={0}>
           <div className="container">
             <p>Echo echo echo.</p>
