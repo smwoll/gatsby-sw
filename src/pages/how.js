@@ -27,11 +27,27 @@ const HowPage = () => {
             </a>
           </footer>
         </blockquote>
+        <blockquote
+          data-sal="slide-up"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+        >
+          "Woah."
+          <footer>
+            <a
+              href="https://www.youtube.com/watch?v=avjdKTqiVvQ"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              —The person next to the person that discovered fire. Probably.
+            </a>
+          </footer>
+        </blockquote>
         <p data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease">
-          Here I will attempt to say thank you to all those developers who were
-          generous enough with their time and upon whose shoulders I stand. I
-          will list the resources, blogs, and videos that helped inspire me as I
-          worked to create my portfolio website. This list is a work in
+          I'm the second guy in the second quote, and I'm very grateful for the
+          developers that shared their ideas, their open-source tech, and their
+          time. I will list the resources, blogs, and videos that helped inspire
+          me as I worked to create my portfolio website. This list is a work in
           progress, and I will continue to update it.
         </p>
         <ul data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">

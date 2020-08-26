@@ -19,11 +19,12 @@ export default function Home() {
   return (
     <div className="front" id="top">
       <SEO title="Home · Skyland Woll" />
+      <Topper />
       <Helmet>
         <html class="front-html" />
       </Helmet>
-      <Parallax pages={3}>
-        <Topper />
+
+      <Parallax pages={6}>
         <ParallaxLayer offset={0} speed={0}>
           <div className="cover">
             <div className="stage0"></div>
@@ -31,6 +32,9 @@ export default function Home() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0}>
           <div className="stage1"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0.8} speed={2.4}>
+          <div className="sunrise"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.15} speed={0.3}>
           <div className="clouds__2">
@@ -164,8 +168,8 @@ export default function Home() {
                   <div style={props}>
                     <p className="lead-text">Let's use the web for good.</p>
                     <p className="intro">
-                      I'm a frontend web developer ready to design and build
-                      your next world-changing website.
+                      I'm a front end web developer ready to build your next
+                      world-changing website.
                     </p>
                   </div>
                 )}
@@ -188,58 +192,249 @@ export default function Home() {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0.7} speed={2}>
+        <ParallaxLayer offset={0.7} speed={2.2}>
           <div className="clouds__1">
             <img src={cloud} alt="cloud" />
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.8} speed={0.1} id="section-1">
-          <div className="cloud-break">
-            <img src={cloudbreak} alt="decorative cloud page break" />
-          </div>
-          <section className="main-content">
-            <div className="container">
-              <p>Echo echo echo.</p>
-
-              <p>
-                <Link to="/about">Learn a lil more.</Link>
-              </p>
-              <p>
-                <a
-                  href="https://html5zombo.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Go far away.
-                </a>
-              </p>
-              <p>
-                Need a guy? <Link to="/contact">Say howdy!</Link>
-              </p>
-            </div>
-          </section>
+        <ParallaxLayer offset={1.1} speed={0.1}>
+          <div className="main-backdrop"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.1}>
+          <div className="main-backdrop"></div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={0}>
-          <div className="container">
-            <p>Echo echo echo.</p>
-            <p>
-              <Link to="/about">Learn a lil more.</Link>
-            </p>
-            <p>
-              <a
-                href="https://html5zombo.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Go far away.
-              </a>
-            </p>
-            <p>
-              Need a guy? <Link to="/contact">Say howdy!</Link>
-            </p>
+        <ParallaxLayer offset={0.8} speed={0.1}>
+          <div className="cloud-break">
+            <img src={cloudbreak} alt="decorative cloud page break" />
+            <div></div>
           </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={0.1}>
+          <main role="main" className="">
+            <div className="container">
+              <p className="intro">
+                I launched my first WordPress website with my Peace Corps
+                counterpart in 2015 and realized the power of the web to tell
+                stories and make positive change. Since then, I’ve built
+                enterprise Drupal sites, and WordPress campaign sites from large
+                to small. Currently, I’m loving learning more about Gatsby.
+              </p>
+
+              <section className="technology">
+                <h2>Technology I use</h2>
+                <div className="wordpress">
+                  <div className="backdrop">
+                    <svg
+                      viewBox="0 0 200 200"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#6387FC"
+                        d="M50.8,-28.5C63.3,-7.8,69.1,17.7,59.5,36.2C49.9,54.7,24.9,66.2,-0.8,66.6C-26.6,67.1,-53.2,56.6,-66.6,35.9C-80.1,15.2,-80.4,-15.7,-67.1,-37C-53.8,-58.2,-26.9,-69.9,-3.8,-67.6C19.2,-65.4,38.4,-49.3,50.8,-28.5Z"
+                        transform="translate(100 100)"
+                      />
+                    </svg>
+                  </div>
+                  <div className="inner">
+                    <div className="logo">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd"
+                        height="100%"
+                        width="100%"
+                        version="1.0"
+                        viewBox="0 0 5.5555557 5.5555555"
+                      >
+                        <g transform="matrix(1.0755 0 0 1.0755 -3.5103 -1.6684)">
+                          <path
+                            d="m5.8465 1.9131c0.57932 0 1.1068 0.222 1.5022 0.58547-0.1938-0.0052-0.3872 0.11-0.3952 0.3738-0.0163 0.5333 0.6377 0.6469 0.2853 1.7196l-0.2915 0.8873-0.7939-2.3386c-0.0123-0.0362 0.002-0.0568 0.0465-0.0568h0.22445c0.011665 0 0.021201-0.00996 0.021201-0.022158v-0.13294c0-0.012193-0.00956-0.022657-0.021201-0.022153-0.42505 0.018587-0.8476 0.018713-1.2676 0-0.0117-0.0005-0.0212 0.01-0.0212 0.0222v0.13294c0 0.012185 0.00954 0.022158 0.021201 0.022158h0.22568c0.050201 0 0.064256 0.016728 0.076091 0.049087l0.3262 0.8921-0.4907 1.4817-0.8066-2.3758c-0.01-0.0298 0.0021-0.0471 0.0308-0.0471h0.25715c0.011661 0 0.021197-0.00996 0.021197-0.022158v-0.13294c0-0.012193-0.00957-0.022764-0.021197-0.022153-0.2698 0.014331-0.54063 0.017213-0.79291 0.019803 0.39589-0.60984 1.0828-1.0134 1.8639-1.0134l-0.0000029-0.0000062zm1.9532 1.1633c0.17065 0.31441 0.26755 0.67464 0.26755 1.0574 0 0.84005-0.46675 1.5712-1.1549 1.9486l0.6926-1.9617c0.1073-0.3036 0.2069-0.7139 0.1947-1.0443h-0.000004zm-1.2097 3.1504c-0.2325 0.0827-0.4827 0.1278-0.7435 0.1278-0.2247 0-0.4415-0.0335-0.6459-0.0955l0.68415-1.9606 0.70524 1.9284v-1e-7zm-1.6938-0.0854c-0.75101-0.35617-1.2705-1.1213-1.2705-2.0075 0-0.32852 0.071465-0.64038 0.19955-0.92096l1.071 2.9285 0.000003-0.000003zm0.95023-4.4367c1.3413 0 2.4291 1.0878 2.4291 2.4291s-1.0878 2.4291-2.4291 2.4291-2.4291-1.0878-2.4291-2.4291 1.0878-2.4291 2.4291-2.4291zm0-0.15354c1.4261 0 2.5827 1.1566 2.5827 2.5827s-1.1566 2.5827-2.5827 2.5827-2.5827-1.1566-2.5827-2.5827 1.1566-2.5827 2.5827-2.5827z"
+                            fill="white"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <h4 className="brandname">WordPress</h4>
+                    <p className="description">
+                      Perfect for ease of use and scalability.
+                    </p>
+                  </div>
+                </div>
+                <div className="drupal">
+                  <div className="backdrop">
+                    <svg
+                      viewBox="0 0 200 200"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#6387FC"
+                        d="M43.3,-30.2C59.3,-14.4,77.7,3.7,76.1,19.9C74.4,36.1,52.7,50.2,31.9,56.5C11.1,62.8,-8.8,61.2,-25.1,53C-41.5,44.8,-54.2,30.1,-60.3,11.4C-66.4,-7.2,-65.8,-29.6,-54.7,-44.3C-43.5,-59,-21.8,-65.9,-4.1,-62.6C13.6,-59.4,27.3,-46,43.3,-30.2Z"
+                        transform="translate(100 100)"
+                      />
+                    </svg>
+                  </div>
+                  <div className="inner">
+                    <div className="logo">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        viewBox="0 0 186.52541 243.71308"
+                      >
+                        <title>Drupal Logo</title>
+                        <g id="Livello_2" data-name="Livello 2">
+                          <g id="Livello_1-2" data-name="Livello 1">
+                            <path
+                              d="M131.64024,51.90954C114.49124,34.76866,98.12945,18.42858,93.26,0,88.39024,18.42858,72.02583,34.76866,54.8797,51.90954,29.16037,77.61263,0,106.7432,0,150.434a93.26271,93.26271,0,1,0,186.52541,0c0-43.688-29.158-72.8214-54.88517-98.52449M39.63956,172.16578c-5.71847-.19418-26.82308-36.57089,12.32937-75.303l25.90873,28.30088a2.21467,2.21467,0,0,1-.173,3.30485c-6.18245,6.34085-32.53369,32.7658-35.809,41.90292-.676,1.886-1.66339,1.81463-2.25619,1.79436M93.26283,220.1092a32.07521,32.07521,0,0,1-32.07544-32.07543A33.42322,33.42322,0,0,1,69.1821,166.8471c5.7836-7.07224,24.07643-26.96358,24.07643-26.96358s18.01279,20.18332,24.03326,26.89607a31.36794,31.36794,0,0,1,8.04647,21.25418A32.07551,32.07551,0,0,1,93.26283,220.1092m61.3923-52.015c-.69131,1.51192-2.25954,4.036-4.37617,4.113-3.77288.13741-4.176-1.79579-6.96465-5.92291-6.12235-9.06007-59.55167-64.89991-69.54517-75.69925-8.79026-9.49851-1.23783-16.195,2.26549-19.70431C80.42989,66.47768,93.25949,53.656,93.25949,53.656s38.25479,36.29607,54.19029,61.09626,10.44364,46.26024,7.20535,53.342"
+                              fill="white"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <h4>Drupal</h4>
+                    <p className="description">
+                      Perfect for complex sites with lots of content.
+                    </p>
+                  </div>
+                </div>
+                <div className="gatsby">
+                  <div className="backdrop">
+                    <svg
+                      viewBox="0 0 200 200"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#6387FC"
+                        d="M51.5,-38.6C65.4,-23.5,74.6,-2.2,71.5,18.3C68.4,38.7,52.9,58.3,33.4,66.7C13.9,75,-9.8,72.2,-31.7,62.8C-53.7,53.4,-74,37.5,-80.6,16.2C-87.3,-5.1,-80.2,-31.8,-64.5,-47.2C-48.8,-62.7,-24.4,-66.9,-2.8,-64.7C18.7,-62.4,37.5,-53.6,51.5,-38.6Z"
+                        transform="translate(100 100)"
+                      />
+                    </svg>
+                  </div>
+                  <div className="inner">
+                    <div className="logo">
+                      <svg
+                        width="521"
+                        height="521"
+                        viewBox="0 0 521 521"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M260.5 0C117.225 0 0 117.225 0 260.5C0 403.775 117.225 521 260.5 521C403.775 521 521 403.775 521 260.5C521 117.225 403.775 0 260.5 0ZM115.364 405.636C76.2893 366.561 55.8214 314.461 55.8214 264.221L258.639 465.179C206.539 463.318 154.439 444.711 115.364 405.636ZM305.157 459.596L61.4036 215.843C81.8714 124.668 163.743 55.8214 260.5 55.8214C329.346 55.8214 388.889 89.3143 426.104 139.554L398.193 163.743C366.561 120.946 316.321 93.0357 260.5 93.0357C187.932 93.0357 126.529 139.554 102.339 204.679L316.321 418.661C370.282 400.054 411.218 353.536 424.243 297.714H334.929V260.5H465.179C465.179 357.257 396.332 439.129 305.157 459.596Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <h4>Gatsby</h4>
+                    <p className="description">
+                      Blazing fast and perfect for the future.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section className="tools">
+                <div>
+                  <h3>Code</h3>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS and SASS (SCSS)</li>
+                    <li>jQuery</li>
+                    <li>PHP/Twig Templating</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3>Tools</h3>
+                  <ul>
+                    <li>Atom</li>
+                    <li>VSCode</li>
+                    <li>Git</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Design</h3>
+                  <ul>
+                    <li>Photoshop</li>
+                    <li>Figma</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="recent-work">
+                <h2>Recent Work</h2>
+
+                <div className="project">
+                  <div className="project-text">
+                    <h3>Dr. Al Gross for US Senate</h3>
+                    <ul>
+                      <li>WordPress site developed from client mockups</li>
+                      <li>Responsive design with Bootstrap 4</li>
+                      <li>Sass Parallax and custom animations</li>
+                    </ul>
+                    <p>
+                      <a
+                        href="https://dralgrossak.com/"
+                        className="btn"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        Visit Website
+                      </a>
+                    </p>
+                  </div>
+                  <div className="project-photos"></div>
+                </div>
+                <div className="project">
+                  <div className="project-text">
+                    <h3>Fireside Campaigns</h3>
+                    <ul>
+                      <li>
+                        Designed and developed from client logo and branding
+                        package
+                      </li>
+                      <li>Responsive design with Bootstrap 4</li>
+                      <li>Scroll effects with jQuery and Animate on Scroll</li>
+                    </ul>
+                    <p>
+                      <a
+                        href="https://firesidecampaigns.com/"
+                        className="btn"
+                        target="_blank"
+                      >
+                        Visit Website
+                      </a>
+                    </p>
+                  </div>
+                  <div className="project-photos"></div>
+                </div>
+                <div className="project">
+                  <div className="project-text">
+                    <h3>Kristine Reeves for Congress</h3>
+                    <ul>
+                      <li>Developed from mockups</li>
+                      <li>Responsive design with Bootstrap 4</li>
+                    </ul>
+                    <p>
+                      <a
+                        href="https://kristinereeves.com/"
+                        className="btn"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        Visit Website
+                      </a>
+                    </p>
+                  </div>
+                  <div className="project-photos"></div>
+                </div>
+              </section>
+            </div>
+          </main>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={5} speed={0.5}>
           <Footer />
         </ParallaxLayer>
       </Parallax>

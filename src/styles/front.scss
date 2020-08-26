@@ -38,6 +38,13 @@
     opacity: .4;
 }
 
+.sunrise {
+    background-image: linear-gradient(to top, #feada6c7 0%, #f5efef00 100%);
+    background-size: cover;
+    background-position: top center;
+    height: 400vh;
+}
+
 .text-stage {
     display: grid;
     place-items: center;
@@ -95,6 +102,12 @@
     width: 100%;
     img {
         width: 100%;
+    }
+    div {
+        background: white;
+        height: 100vh;
+        widows: 100%;
+        margin-top: -50px;
     }
 }
 
@@ -155,10 +168,130 @@
 // sections 
 
 section {
-    padding: 4rem 0;
-    background-color: white;
+    padding: 2rem 0;
+    h2 {
+        display: block;
+        width: 100%;
+    }
 }
 
-section.main-content {
+.main-backdrop {
+    background-color: white;
+    width: 100%;
+    height: 900vh;
+}
+
+ .front .main-content {
     margin-top: -50px;
+    min-height: 200vh;
+    z-index: 4;
+}
+
+.intro {
+    display: grid;
+    font-size: 1.2rem;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    a {
+        margin-top: 1rem;
+    }
+}
+
+.technology {
+    @include easeinout;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    justify-content: center;
+    min-height: 300px;
+    width: 100%;
+    div {
+        flex: 1 1 200px;
+        display: grid;
+        place-items: center;
+        background-position: center;
+        background-size: 100%;
+    }
+    .wordpress, .drupal, .gatsby {
+        position: relative;
+        margin: 6rem auto;
+        .backdrop {
+            @include easeinout;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+        &:hover {
+            
+            .backdrop {
+                transform: scale(1.1) rotate(-40deg);
+            }
+            .description {
+                height: auto;
+                opacity: 1;
+            }
+            .logo, h4 {
+                opacity: 0;
+            }
+        }
+    }
+    .drupal h4 {
+        margin-top: 1rem;
+    }
+    .logo {
+        @include easeinout;
+        display: flex;
+        place-items: center;
+        width: 80px;
+        max-height: 80px;
+        position: relative;
+    }
+    h4 {
+        color: white;
+        margin: .5rem;
+        z-index: 2;
+    }
+    .description {
+        @include easeinout;
+        color: white;
+        font-weight: bold;
+        width: 50%;
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+        text-align: center;
+    }
+}
+
+.tools {
+    display: flex;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    div {
+    flex: 0 1 250px;
+margin: 5px auto;
+display: flex;
+flex-direction: column;
+    }
+}
+
+.recent-work {
+    .project {
+        min-height: 80vh;
+        margin: 10vh 0;
+        width: 100%;
+    }
+    h3 {
+        font-size: modular-scale(3, 1em 1.6em, $golden);
+    }
+    ul {
+        font-size: modular-scale(1, 1em 1.6em, $golden);
+    }
+    li {
+        margin: 2rem 0;
+    }
 }
