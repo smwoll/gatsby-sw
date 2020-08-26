@@ -24,7 +24,7 @@ export default function Home() {
         <html class="front-html" />
       </Helmet>
 
-      <Parallax pages={6}>
+      <Parallax pages={7}>
         <ParallaxLayer offset={0} speed={0}>
           <div className="cover">
             <div className="stage0"></div>
@@ -182,7 +182,11 @@ export default function Home() {
                 {props => (
                   <div style={props}>
                     <div className="cta-box">
-                      <a className="cta btn" href="mailto:skylandwoll@gmail.com" rel="noreferrer">
+                      <a
+                        className="cta btn"
+                        href="mailto:skylandwoll@gmail.com"
+                        rel="noreferrer"
+                      >
                         <svg
                           className="email"
                           xmlns="http://www.w3.org/2000/svg"
@@ -221,6 +225,45 @@ export default function Home() {
             <img src={cloudbreak} alt="decorative cloud page break" />
             <div></div>
           </div>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={3}
+          speed={0}
+          style={{ opacity: ".2", marginLeft: "50%" }}
+        >
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#6387FC"
+              d="M36,-56C44,-43.8,46,-29.7,52.8,-15.6C59.5,-1.5,71,12.7,70.1,25.1C69.2,37.4,55.9,48,42.2,55.7C28.4,63.5,14.2,68.3,0.4,67.7C-13.4,67.2,-26.8,61.2,-39.1,53.1C-51.5,44.9,-62.9,34.5,-70.5,20.7C-78.1,6.8,-81.9,-10.5,-78.9,-27.4C-75.9,-44.4,-66,-60.8,-51.8,-71C-37.5,-81.1,-18.7,-84.9,-2.4,-81.7C14,-78.4,28,-68.2,36,-56Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={4}
+          speed={0}
+          style={{ opacity: ".2", marginLeft: "-40%" }}
+        >
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#6387FC"
+              d="M36,-56C44,-43.8,46,-29.7,52.8,-15.6C59.5,-1.5,71,12.7,70.1,25.1C69.2,37.4,55.9,48,42.2,55.7C28.4,63.5,14.2,68.3,0.4,67.7C-13.4,67.2,-26.8,61.2,-39.1,53.1C-51.5,44.9,-62.9,34.5,-70.5,20.7C-78.1,6.8,-81.9,-10.5,-78.9,-27.4C-75.9,-44.4,-66,-60.8,-51.8,-71C-37.5,-81.1,-18.7,-84.9,-2.4,-81.7C14,-78.4,28,-68.2,36,-56Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </ParallaxLayer>
+        <ParallaxLayer
+          offset={5}
+          speed={0}
+          style={{ opacity: ".2", marginLeft: "50%" }}
+        >
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#6387FC"
+              d="M38.8,-46.9C53.8,-42.4,72.1,-35.9,74.6,-25C77,-14.1,63.6,1.1,55.6,15.7C47.6,30.3,44.9,44.2,36.6,57.2C28.2,70.1,14.1,82,-0.9,83.3C-15.9,84.5,-31.8,75,-45.5,63.8C-59.2,52.6,-70.8,39.7,-77.2,24.1C-83.7,8.5,-85.1,-9.8,-77.3,-22.4C-69.5,-35.1,-52.6,-42,-38.1,-46.7C-23.7,-51.4,-11.9,-53.8,0,-53.8C11.9,-53.8,23.7,-51.4,38.8,-46.9Z"
+              transform="translate(100 100)"
+            />
+          </svg>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.1}>
           <main role="main" className="">
@@ -372,80 +415,90 @@ export default function Home() {
                   </ul>
                 </div>
               </section>
-
-              <section className="recent-work">
-                <h2>Recent Work</h2>
-
-                <div className="project">
-                  <div className="project-text">
-                    <h3>Dr. Al Gross for US Senate</h3>
-                    <ul>
-                      <li>WordPress site developed from client mockups</li>
-                      <li>Responsive design with Bootstrap 4</li>
-                      <li>Sass Parallax and custom animations</li>
-                    </ul>
-                    <p>
-                      <a
-                        href="https://dralgrossak.com/"
-                        className="btn"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        Visit Website
-                      </a>
-                    </p>
-                  </div>
-                  <div className="project-photos"></div>
-                </div>
-                <div className="project">
-                  <div className="project-text">
-                    <h3>Fireside Campaigns</h3>
-                    <ul>
-                      <li>
-                        Designed and developed from client logo and branding
-                        package
-                      </li>
-                      <li>Responsive design with Bootstrap 4</li>
-                      <li>Scroll effects with jQuery and Animate on Scroll</li>
-                    </ul>
-                    <p>
-                      <a
-                        href="https://firesidecampaigns.com/"
-                        className="btn"
-                        target="_blank"
-                      >
-                        Visit Website
-                      </a>
-                    </p>
-                  </div>
-                  <div className="project-photos"></div>
-                </div>
-                <div className="project">
-                  <div className="project-text">
-                    <h3>Kristine Reeves for Congress</h3>
-                    <ul>
-                      <li>Developed from mockups</li>
-                      <li>Responsive design with Bootstrap 4</li>
-                    </ul>
-                    <p>
-                      <a
-                        href="https://kristinereeves.com/"
-                        className="btn"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        Visit Website
-                      </a>
-                    </p>
-                  </div>
-                  <div className="project-photos"></div>
-                </div>
-              </section>
             </div>
           </main>
         </ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0.5}>
+          <section className="recent-work">
+            <div className="container">
+              <h2>Recent Work</h2>
 
-        <ParallaxLayer offset={5} speed={0.5}>
+              <div className="project">
+                <div className="project-text">
+                  <h3>Dr. Al Gross for US Senate</h3>
+                  <ul>
+                    <li>WordPress site developed from client mockups</li>
+                    <li>Responsive design with Bootstrap 4</li>
+                    <li>Sass Parallax and custom animations</li>
+                  </ul>
+                  <p>
+                    <a
+                      href="https://dralgrossak.com/"
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      Visit Website
+                    </a>
+                  </p>
+                </div>
+                <div className="project-photos"></div>
+              </div>
+            </div>
+            
+
+            
+          </section>
+        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={0.4}><div className="container">
+              <div className="project">
+                <div className="project-text">
+                  <h3>Fireside Campaigns</h3>
+                  <ul>
+                    <li>
+                      Designed and developed from client logo and branding
+                      package
+                    </li>
+                    <li>Responsive design with Bootstrap 4</li>
+                    <li>Scroll effects with jQuery and Animate on Scroll</li>
+                  </ul>
+                  <p>
+                    <a
+                      href="https://firesidecampaigns.com/"
+                      className="btn"
+                      target="_blank"
+                    >
+                      Visit Website
+                    </a>
+                  </p>
+                </div>
+                <div className="project-photos"></div>
+              </div>
+            </div></ParallaxLayer>
+        <ParallaxLayer offset={5} speed={0.4}><div className="container">
+              <div className="project">
+                <div className="project-text">
+                  <h3>Kristine Reeves for Congress</h3>
+                  <ul>
+                    <li>Developed from mockups</li>
+                    <li>Responsive design with Bootstrap 4</li>
+                  </ul>
+                  <p>
+                    <a
+                      href="https://kristinereeves.com/"
+                      className="btn"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      Visit Website
+                    </a>
+                  </p>
+                </div>
+                <div className="project-photos"></div>
+              </div>
+            </div></ParallaxLayer>
+
+        <ParallaxLayer offset={6} speed={0.5}>
           <Footer />
         </ParallaxLayer>
       </Parallax>
