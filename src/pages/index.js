@@ -230,7 +230,7 @@ export default function Home() {
                 counterpart in 2015 and realized the power of the web to tell
                 stories and make positive change. Since then, I’ve built
                 enterprise Drupal sites, and WordPress campaign sites from large
-                to small. Currently, I’m loving learning more about Gatsby.
+                to small.
               </p>
 
               <section className="technology">
