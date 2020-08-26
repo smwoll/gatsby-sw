@@ -13,7 +13,7 @@ module.exports = {
     description:
       "Let's use the web for good. I'm a frontend web developer ready to design and build your next world-changing website.",
     url: "https://skyland.dev", // No trailing slash allowed!
-    image: "/static/skyland-dev-social.jpg", // Path to your image you placed in the 'static' folder
+    image: "/skyland-dev-social.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@therealskyland",
   },
   plugins: [
