@@ -23,8 +23,10 @@ height: 100px;
   color: white;
 min-height: 100vh;
 width: 100%;
-display: grid;
+display: flex;
 place-items: center;
+flex-direction: column;
+justify-content: center;
 ul {
   list-style: none;
 }
@@ -153,3 +155,17 @@ li:hover {
 }
 
 .menu-line-3 { bottom: 0; }
+
+.social {
+  svg {
+    transition: all 0.55s;
+    fill: white;
+  }
+  a {
+    padding: .5rem;
+  }
+  a:hover svg {
+    fill: $nightsky;
+    transform: scale(1.1);
+  }
+}

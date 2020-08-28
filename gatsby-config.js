@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: "Skyland Woll",
     author: "Skyland Woll",
-    titleTemplate: "%s · Frontend Web Developer",
+    titleTemplate: "%s · Skyland Woll · Front End Web Developer",
     description:
       "Let's use the web for good. I'm a frontend web developer ready to design and build your next world-changing website.",
     url: "https://skyland.dev", // No trailing slash allowed!
