@@ -299,6 +299,12 @@ margin-right: auto;
 
 @media (min-width: 900px) {
 
+    .section-header {
+        h2 {
+            font-size: modular-scale(5, 1em 1.6em, $golden);
+        }
+    }
+
     section.technology {
         display: block;
         height: auto;
