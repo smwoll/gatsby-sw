@@ -174,11 +174,47 @@
 
 // sections 
 
+.section-header {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
 section {
     padding: 2rem 0;
     h2 {
         display: block;
         width: 100%;
+    }
+}
+//  front main and front section height
+.front section, .front main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.front main {
+    display: grid;
+    place-items: center;
+    .container {
+        display: grid;
+        place-items: center;
+    }
+    .intro {
+        width: clamp(12em, 50vw, 1000px);
+        max-width: 100%;
+        text-align: left;
+    }
+}
+.intro {
+    display: grid;
+    font-size: modular-scale(2, 1em 4em, $golden);
+    line-height: 1;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    a {
+        margin-top: 1rem;
     }
 }
 
@@ -194,26 +230,88 @@ section {
     z-index: 4;
 }
 
-.intro {
-    display: grid;
+section.technology {
+    display: none;
+}
+
+
+.tools {
+    display: flex;
     font-size: 1.2rem;
-    place-items: center;
-    text-align: center;
-    padding: 1rem;
-    a {
-        margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    div {
+    flex: 0 1 250px;
+display: flex;
+flex-direction: column;
+margin-right: auto;
     }
 }
 
-.technology {
+.recent-work {
+    h3 {
+        font-size: modular-scale(2, 1em 1.6em, $golden);
+    }
+    ul {
+        font-size: modular-scale(1, 1em 1.6em, $golden);
+    }
+    li {
+        margin: 2rem 0;
+    }
+    img {
+        border-radius: 2%;
+    }
+}
+.project-photos {
+        display: inline-block;
+        img {
+            border-radius: .3rem;
+            box-shadow: 0 7px 18px 0 rgba(0, 0, 0, 0.14);
+        }
+        
+    }
+
+.project-photos.desktop {
+    display: none;
+}
+
+.project.algross {
+    li::marker {
+        color: #f2cb5c;
+    }
+}
+.project.fireside {
+    li::marker {
+        color: #1c2543;
+    }
+}
+.project.reeves {
+    li::marker {
+        color: #69b9f9; 
+    }
+}
+
+
+
+//  media queries
+
+@media (min-width: 900px) {
+
+    section.technology {
+        display: block;
+        height: auto;
+    }
+
+    .technology {
     @include easeinout;
-    display: flex;
+    .container {
+        display: flex;
     flex-wrap: wrap;
     font-size: 1.2rem;
     justify-content: center;
-    min-height: 300px;
-    width: 100%;
-    div {
+    }
+    div:not(.container) {
         flex: 1 1 200px;
         display: grid;
         place-items: center;
@@ -271,40 +369,6 @@ section {
         text-align: center;
     }
 }
-
-.tools {
-    display: flex;
-    font-size: 1.2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    div {
-    flex: 0 1 250px;
-display: flex;
-flex-direction: column;
-margin-right: auto;
-    }
-}
-
-.recent-work {
-    .project {
-        min-height: 40vh;
-        margin: 5vh 0;
-        width: 100%;
-    }
-    h3 {
-        font-size: modular-scale(3, 1em 1.6em, $golden);
-    }
-    ul {
-        font-size: modular-scale(1, 1em 1.6em, $golden);
-    }
-    li {
-        margin: 2rem 0;
-    }
-}
-//  media queries
-
-@media (min-width: 900px) {
     .tools {
     display: flex;
     font-size: 1.2rem;
@@ -319,11 +383,17 @@ flex-direction: column;
     }
 }
 
+
     .recent-work {
     .project {
-        min-height: 80vh;
-        margin: 10vh 0;
         width: 100%;
+    }
+    .project-text {
+        width: 50%;
+    }
+    
+    .project-photos.mobile {
+        display: none;
     }
     h3 {
         font-size: modular-scale(3, 1em 1.6em, $golden);
@@ -335,4 +405,24 @@ flex-direction: column;
         margin: 2rem 0;
     }
 }
+    .project-photos, .project-photos.desktop {
+        display: inline-block;
+        img.mobile {
+            position: absolute;
+            right: 5vw;
+            bottom: 0;
+            width: 20%;
+        }
+        img.desktop {
+            position: absolute;
+            right: 10vw;
+            top: 0;
+            width: 40%;
+        }
+    }
+    
+    
+
+
+
 }
