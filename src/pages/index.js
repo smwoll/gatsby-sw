@@ -289,7 +289,12 @@ export default function Home() {
           </main>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={0.2} factor={.5} className="section-header">
+        <ParallaxLayer
+          offset={2}
+          speed={0.2}
+          factor={0.5}
+          className="section-header"
+        >
           <h2>Technology</h2>
         </ParallaxLayer>
 
@@ -298,7 +303,11 @@ export default function Home() {
             <div className="container">
               <div className="wordpress">
                 <div className="backdrop">
-                  <svg viewBox="0 0 200 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    viewBox="0 0 200 200"
+                    width="100%"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       fill="#6387FC"
                       d="M50.8,-28.5C63.3,-7.8,69.1,17.7,59.5,36.2C49.9,54.7,24.9,66.2,-0.8,66.6C-26.6,67.1,-53.2,56.6,-66.6,35.9C-80.1,15.2,-80.4,-15.7,-67.1,-37C-53.8,-58.2,-26.9,-69.9,-3.8,-67.6C19.2,-65.4,38.4,-49.3,50.8,-28.5Z"
@@ -311,7 +320,6 @@ export default function Home() {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill-rule="evenodd"
-                      
                       width="100%"
                       version="1.0"
                       viewBox="0 0 5.5555557 5.5555555"
@@ -428,7 +436,12 @@ export default function Home() {
             </div>
           </section>
         </ParallaxLayer>
-        <ParallaxLayer offset={3.5} speed={0.2} factor={.5} className="section-header">
+        <ParallaxLayer
+          offset={3.5}
+          speed={0.2}
+          factor={0.5}
+          className="section-header"
+        >
           <h2>Recent Projects</h2>
         </ParallaxLayer>
         <ParallaxLayer offset={4} speed={1}>
