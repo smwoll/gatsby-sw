@@ -769,7 +769,12 @@ footer.site-footer {
       }
 }
 footer .social {
-  display: inline;
+  display: inline-block;
+  margin-bottom: 1rem;
+  a {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
 }
 footer p {
   text-align: center;
