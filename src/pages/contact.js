@@ -7,7 +7,7 @@ const ContactPage = () => {
     return (
       <Layout>
         <SEO title="Contact · Skyland Woll" />
-        <h1>Contact Page</h1>
+        <h1>Contact Me</h1>
         <p>Please email me at <a href="mailto:skylandwoll@gmail.com">skylandwoll@gmail.com</a>.</p>
         
         <p>
