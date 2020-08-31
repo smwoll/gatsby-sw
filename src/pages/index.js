@@ -228,7 +228,7 @@ export default function Home() {
           <div className="main-backdrop"></div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.8} speed={0.1}>
+        <ParallaxLayer offset={0.8} speed={0.1} style={{pointerEvents: 'none'}}>
           <div className="cloud-break">
             <img src={cloudbreak} alt="decorative cloud page break" />
             <div></div>
