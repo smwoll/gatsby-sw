@@ -78,7 +78,7 @@
     margin-bottom: 2rem;
   }
   .lead-text {
-    font-size: calc(10vw * 0.49996666);
+    font-size: calc(10vw * 0.48896666);
     color: #a0b6ff;
   }
   .intro {
@@ -162,7 +162,7 @@
   @include easeinout;
   svg {
     vertical-align: middle;
-    margin: 0 2px 2px 0;
+    margin-right: 2px;
   }
   span {
     vertical-align: middle;
