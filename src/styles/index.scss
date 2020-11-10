@@ -846,6 +846,11 @@ body {
 
 ul {
   list-style-type: disc;
+  li {
+    a {
+      display: inline;
+    }
+  }
 }
 
 li::marker {
