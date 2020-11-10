@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        includePaths: [require("bourbon").includePaths],
+        includePaths: require("bourbon").includePaths,
       },
     },
   ],
