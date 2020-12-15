@@ -2,26 +2,25 @@ import React, { useEffect, useState, useRef } from "react"
 import { Link } from "gatsby"
 
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons"
-import { Spring, config } from 'react-spring/renderprops'
+import { Spring, config } from "react-spring/renderprops"
 import { Helmet } from "react-helmet"
 
-import SEO from '../components/SEO'
+import SEO from "../components/SEO"
 import Topper from "../components/topper"
 import Footer from "../components/footer"
 import "../styles/index.scss"
 
-import '../styles/front.scss'
+import "../styles/front.scss"
 
 // images
-import cloud from '../assets/cloud1.svg'
-import cloudbreak from '../assets/pagebreak-curve.svg'
+import cloud from "../assets/cloud1.svg"
+import cloudbreak from "../assets/pagebreak-curve.svg"
 import algross from "../assets/alrgoss.jpg"
 import algrossmobile from "../assets/algross-mobile.jpg"
 import fireside from "../assets/fireside.jpg"
 import firesidemobile from "../assets/fireside-mobile.jpg"
-import reeves from "../assets/reeves.jpg"
-import reevesmobile from "../assets/reeves-mobile.jpg"
-
+import votercare from "../assets/votercare.jpg"
+import votercaremobile from "../assets/votercare-mobile.jpg"
 
 export default function Home() {
   return (
@@ -228,7 +227,11 @@ export default function Home() {
           <div className="main-backdrop"></div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.8} speed={0.1} style={{pointerEvents: 'none'}}>
+        <ParallaxLayer
+          offset={0.8}
+          speed={0.1}
+          style={{ pointerEvents: "none" }}
+        >
           <div className="cloud-break">
             <img src={cloudbreak} alt="decorative cloud page break" />
             <div></div>
@@ -453,7 +456,7 @@ export default function Home() {
             />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={2}>
+        <ParallaxLayer offset={4} speed={2} style={{ marginTop: "-10%" }}>
           <div className="project-photos desktop">
             <img
               src={algrossmobile}
@@ -478,9 +481,25 @@ export default function Home() {
                   </div>
 
                   <ul>
-                    <li>WordPress site developed from client mockups</li>
-                    <li>Responsive design with Bootstrap 4</li>
-                    <li>Sass Parallax and custom animations</li>
+                    <li>
+                      Provided full-service WordPress site development and
+                      custom theming based upon client-provided mockups
+                    </li>
+                    <li>
+                      Responsive design for cross-device compatibility using
+                      Bootstrap 4 framework
+                    </li>
+                    <li>Parallax mountainscape and custom animations</li>
+                    <li>
+                      Named one of the best campaign websites of 2020 by{" "}
+                      <a
+                        href="https://poliengine.com/blog/best-political-campaign-websites"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        PoliEngine
+                      </a>
+                    </li>
                   </ul>
                   <p>
                     <a
@@ -506,7 +525,7 @@ export default function Home() {
             />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={5} speed={2}>
+        <ParallaxLayer offset={5} speed={2} style={{ marginTop: "-10%" }}>
           <div className="project-photos desktop">
             <img
               src={firesidemobile}
@@ -542,6 +561,7 @@ export default function Home() {
                       href="https://firesidecampaigns.com/"
                       className="btn"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Visit Website
                     </a>
@@ -554,18 +574,18 @@ export default function Home() {
         <ParallaxLayer offset={6} speed={1}>
           <div className="project-photos desktop">
             <img
-              src={reeves}
+              src={votercare}
               class="desktop"
-              alt="Screenshot of Dr Al Gross for US Senate website"
+              alt="Screenshot of VoterCare website"
             />
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={6} speed={2}>
+        <ParallaxLayer offset={6} speed={2} style={{ marginTop: "-10%" }}>
           <div className="project-photos desktop">
             <img
-              src={reevesmobile}
+              src={votercaremobile}
               class="mobile"
-              alt="Screenshot of Dr Al Gross for US Senate website on mobile"
+              alt="Screenshot of VoterCare website on mobile"
             />
           </div>
         </ParallaxLayer>
@@ -574,21 +594,28 @@ export default function Home() {
             <div className="container">
               <div className="project reeves">
                 <div className="project-text">
-                  <h3>Kristine Reeves for Congress</h3>
+                  <h3>VoterCare</h3>
                   <div className="project-photos mobile">
                     <img
-                      src={reeves}
+                      src={votercare}
                       class="desktop"
-                      alt="Screenshot of Fireside Campaigns website"
+                      alt="Screenshot of VoterCare website"
                     />
                   </div>
                   <ul>
-                    <li>Developed from mockups</li>
-                    <li>Responsive design with Bootstrap 4</li>
+                    <li>
+                      Custom WordPress development based upon client-provided
+                      designs
+                    </li>
+                    <li>Created logo animations and scroll animations</li>
+                    <li>
+                      Content feeds with convenient, consistent custom fields
+                    </li>
+                    <li>Custom sign up form</li>
                   </ul>
                   <p>
                     <a
-                      href="https://kristinereeves.com/"
+                      href="https://votercare.org/"
                       className="btn"
                       target="_blank"
                       rel="noreferrer noopener"
