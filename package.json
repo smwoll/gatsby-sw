@@ -16,19 +16,20 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bourbon": "^7.0.0",
-    "gatsby": "^2.28.2",
-    "gatsby-plugin-react-helmet": "^3.6.0",
-    "gatsby-plugin-sass": "^2.7.0",
+    "gatsby": "^2.29.3",
+    "gatsby-plugin-react-helmet": "^3.7.0",
+    "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-scroll-reveal": "0.0.7",
-    "gatsby-plugin-sitemap": "^2.8.0",
+    "gatsby-plugin-sitemap": "^2.9.0",
     "node-sass": "^4.14.1",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-spring": "^8.0.27"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "sass": "^1.32.0"
   },
   "repository": {
     "type": "git",
