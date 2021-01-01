@@ -450,7 +450,7 @@ export default function Home() {
         <ParallaxLayer offset={4} speed={1}>
           <div className="project-photos desktop">
             <img
-              src={algross}
+              src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/alrgoss_gy6tvb.jpg"
               class="desktop"
               alt="Screenshot of Dr Al Gross for US Senate website"
             />
@@ -459,7 +459,7 @@ export default function Home() {
         <ParallaxLayer offset={4} speed={2} style={{ marginTop: "-10%" }}>
           <div className="project-photos desktop">
             <img
-              src={algrossmobile}
+              src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/algross-mobile_ry7rlo.jpg"
               class="mobile"
               alt="Screenshot of Dr Al Gross for US Senate website on mobile"
             />
@@ -474,7 +474,7 @@ export default function Home() {
                   <h3>Dr. Al Gross for US Senate</h3>
                   <div className="project-photos mobile">
                     <img
-                      src={algross}
+                      src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/alrgoss_gy6tvb.jpg"
                       class="desktop"
                       alt="Screenshot of Dr Al Gross for US Senate website"
                     />
@@ -519,7 +519,7 @@ export default function Home() {
         <ParallaxLayer offset={5} speed={1}>
           <div className="project-photos desktop">
             <img
-              src={fireside}
+              src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/fireside_zsurua.jpg"
               class="desktop"
               alt="Screenshot of Dr Al Gross for US Senate website"
             />
@@ -528,7 +528,7 @@ export default function Home() {
         <ParallaxLayer offset={5} speed={2} style={{ marginTop: "-10%" }}>
           <div className="project-photos desktop">
             <img
-              src={firesidemobile}
+              src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/fireside-mobile_y25sqj.jpg"
               class="mobile"
               alt="Screenshot of Dr Al Gross for US Senate website on mobile"
             />
@@ -542,7 +542,7 @@ export default function Home() {
                   <h3>Fireside Campaigns</h3>
                   <div className="project-photos mobile">
                     <img
-                      src={fireside}
+                      src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/fireside_zsurua.jpg"
                       class="desktop"
                       alt="Screenshot of Fireside Campaigns website"
                     />
@@ -574,7 +574,7 @@ export default function Home() {
         <ParallaxLayer offset={6} speed={1}>
           <div className="project-photos desktop">
             <img
-              src={votercare}
+              src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/votercare_flwrdz.jpg"
               class="desktop"
               alt="Screenshot of VoterCare website"
             />
@@ -583,7 +583,7 @@ export default function Home() {
         <ParallaxLayer offset={6} speed={2} style={{ marginTop: "-10%" }}>
           <div className="project-photos desktop">
             <img
-              src={votercaremobile}
+              src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/votercare-mobile_fyarcv.jpg"
               class="mobile"
               alt="Screenshot of VoterCare website on mobile"
             />
@@ -597,7 +597,7 @@ export default function Home() {
                   <h3>VoterCare</h3>
                   <div className="project-photos mobile">
                     <img
-                      src={votercare}
+                      src="https://res.cloudinary.com/ds7jmq69w/image/upload/v1609533870/Portfolio/votercare_flwrdz.jpg"
                       class="desktop"
                       alt="Screenshot of VoterCare website"
                     />
