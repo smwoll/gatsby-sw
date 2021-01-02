@@ -27,5 +27,14 @@ module.exports = {
         includePaths: require("bourbon").includePaths,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets`,
+        name: "images",
+      },
+    },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
   ],
 }
