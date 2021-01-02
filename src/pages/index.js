@@ -589,7 +589,7 @@ const IndexPage = props => (
       <ParallaxLayer offset={6} speed={0.2}>
         <section className="recent-work">
           <div className="container">
-            <div className="project reeves">
+            <div className="project votercare">
               <div className="project-text">
                 <h3>VoterCare</h3>
                 <div className="project-photos mobile">
