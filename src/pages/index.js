@@ -173,8 +173,8 @@ const IndexPage = props => (
                 <div style={props}>
                   <p className="lead-text">Let's use the web for good.</p>
                   <p className="intro">
-                    I'm a front end web developer ready to build your next
-                    world-changing website.
+                    I'm a web developer ready to build your next world-changing
+                    website.
                   </p>
                 </div>
               )}
