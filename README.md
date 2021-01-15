@@ -1,3 +1,7 @@
+# Skyland Woll’s Portfolio
+
+Howdy. I built this portfolio while learning Gatsby. It’s a simple Gatsby site using [React Spring](https://www.react-spring.io/) for animation. The documentation below is for Gatsby’s Hello World Starter.
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
