@@ -768,11 +768,14 @@ footer.site-footer {
   }
 }
 footer .social {
-  display: inline-block;
+  display: flex;
   margin-bottom: 1rem;
   a {
     padding-left: 0;
     padding-right: 1rem;
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 }
 footer p {
