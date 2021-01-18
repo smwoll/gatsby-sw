@@ -160,6 +160,8 @@ a {
 }
 
 .social {
+  display: flex;
+  place-items: center;
   svg {
     transition: all 0.55s;
     fill: white;
