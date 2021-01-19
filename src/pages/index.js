@@ -428,6 +428,7 @@ const IndexPage = props => (
               <ul>
                 <li>Photoshop</li>
                 <li>Figma</li>
+                <li>XD</li>
               </ul>
             </div>
           </div>
