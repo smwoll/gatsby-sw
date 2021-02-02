@@ -98,6 +98,7 @@
   background: $lightcloud;
   visibility: hidden;
   opacity: 0;
+  pointer-events: none;
 
   transition: all 0.55s;
   transition-delay: 0.1s;
@@ -107,20 +108,20 @@
   &.active {
     visibility: visible;
     opacity: 1;
-  }
-
-  a {
     pointer-events: all;
+    a {
+      pointer-events: all;
+    }
   }
 }
 
 .active .menu {
   visibility: visible;
   opacity: 1;
-}
-
-a {
   pointer-events: all;
+  a {
+    pointer-events: all;
+  }
 }
 
 .menu-icon {
