@@ -38,7 +38,7 @@ module.exports = {
       resolve: `gatsby-plugin-plausible`,
       options: {
         domain: `skyland.dev`,
-        customDomain: "analytics.skyland.dev",
+        customDomain: "analytics.skyland.dev/js/plausible.js?original=",
       },
     },
     "gatsby-transformer-sharp",
