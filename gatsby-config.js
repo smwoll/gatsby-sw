@@ -34,6 +34,13 @@ module.exports = {
         name: "images",
       },
     },
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `skyland.dev`,
+        customDomain: "analytics.skyland.dev",
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
   ],
