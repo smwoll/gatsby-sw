@@ -417,18 +417,18 @@ const IndexPage = props => (
             <div>
               <h3>Tools</h3>
               <ul>
-                <li>Atom</li>
                 <li>VSCode</li>
                 <li>Git</li>
                 <li>Bootstrap</li>
+                <li>Lando</li>
               </ul>
             </div>
             <div>
               <h3>Design</h3>
               <ul>
-                <li>Photoshop</li>
                 <li>Figma</li>
                 <li>XD</li>
+                <li>Photoshop</li>
               </ul>
             </div>
           </div>
